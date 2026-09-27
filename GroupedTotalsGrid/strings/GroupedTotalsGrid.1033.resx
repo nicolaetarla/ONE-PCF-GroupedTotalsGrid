@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter</value></resheader>
+
+  <data name="GroupedTotalsGrid_Display"><value>Grouped Totals Grid</value></data>
+  <data name="GroupedTotalsGrid_Desc"><value>Shows a view grouped by any column, including lookups, with per-group and grand totals rendered in the platform's own cell formatting.</value></data>
+  <data name="Records_Display"><value>Records</value></data>
+  <data name="CurrencyColumn_Display"><value>Transaction currency</value></data>
+  <data name="CurrencyColumn_Desc"><value>Bind to transactioncurrencyid so mixed-currency groups can be detected.</value></data>
+
+  <data name="Yes"><value>Yes</value></data>
+  <data name="No"><value>No</value></data>
+
+  <data name="GroupByColumn_Display"><value>Group by column</value></data>
+  <data name="GroupByColumn_Desc"><value>Optional. Logical name (not display name) of the column to group by, entered as a static value. Leave blank to let users choose from the column header menu; their choice is remembered per view and overrides this setting. Lookup columns are supported.</value></data>
+  <data name="AllowRuntimeGroupChange_Display"><value>Allow users to change grouping</value></data>
+  <data name="AllowRuntimeGroupChange_Desc"><value>Shows Group by this column in the column header menu.</value></data>
+  <data name="GroupsInitiallyCollapsed_Display"><value>Start with groups collapsed</value></data>
+  <data name="GroupsInitiallyCollapsed_Desc"><value>Collapsed groups on first render.</value></data>
+  <data name="ShowRecordCounts_Display"><value>Show record counts</value></data>
+  <data name="ShowRecordCounts_Desc"><value>Shows the number of records beside each group label.</value></data>
+  <data name="EmptyGroupLabel_Display"><value>Empty group label</value></data>
+  <data name="EmptyGroupLabel_Desc"><value>Label for records with no value in the grouping column.</value></data>
+
+  <data name="AggregateColumns_Display"><value>Columns to total</value></data>
+  <data name="AggregateColumns_Desc"><value>Comma-separated logical names. Leave blank to total every column in the view that can be totalled.</value></data>
+  <data name="ShowGrandTotal_Display"><value>Show grand total</value></data>
+  <data name="ShowGrandTotal_Desc"><value>Pins a grand total row to the bottom of the grid.</value></data>
+  <data name="TotalsMode_Display"><value>Totals mode</value></data>
+  <data name="TotalsMode_Desc"><value>Auto uses server aggregation and falls back to loaded rows. ServerAggregate never falls back. ClientOnly never queries the server.</value></data>
+  <data name="TotalsMode_Auto"><value>Auto</value></data>
+  <data name="TotalsMode_Server"><value>Server aggregate only</value></data>
+  <data name="TotalsMode_Client"><value>Loaded rows only</value></data>
+
+  <data name="DurationDisplay_Display"><value>Duration total format</value></data>
+  <data name="DurationDisplay_Desc"><value>Auto matches how the platform formats the duration cells in the column.</value></data>
+  <data name="DurationDisplay_Auto"><value>Auto (match the column)</value></data>
+  <data name="DurationDisplay_HM"><value>Hours and minutes</value></data>
+  <data name="DurationDisplay_HCM"><value>Hours:minutes</value></data>
+  <data name="DurationDisplay_Dec"><value>Decimal hours</value></data>
+  <data name="DurationDisplay_Min"><value>Minutes</value></data>
+
+  <data name="MaxClientRows_Display"><value>Maximum rows loaded</value></data>
+  <data name="MaxClientRows_Desc"><value>Ceiling on rows pulled into the browser. Groups beyond this load their rows on expand.</value></data>
+
+  <data name="NavigationTypesAllowed_Display"><value>Navigation types allowed</value></data>
+  <data name="NavigationTypesAllowed_Desc"><value>Which cells render as hyperlinks. Mirrors the Power Apps grid control property of the same name.</value></data>
+  <data name="NavTypes_All"><value>All</value></data>
+  <data name="NavTypes_Primary"><value>Primary only</value></data>
+  <data name="NavTypes_None"><value>None</value></data>
+  <data name="EnableOptionSetColors_Display"><value>Enable choice colours</value></data>
+  <data name="EnableOptionSetColors_Desc"><value>Renders choice columns with their configured background colours.</value></data>
+  <data name="RowDensity_Display"><value>Row density</value></data>
+  <data name="RowDensity_Desc"><value>Platform follows the host setting or the native default.</value></data>
+  <data name="RowDensity_Platform"><value>Platform default</value></data>
+  <data name="RowDensity_Comfortable"><value>Comfortable</value></data>
+  <data name="RowDensity_Compact"><value>Compact</value></data>
+
+  <data name="EnableDebugLogging_Display"><value>Enable debug logging</value></data>
+  <data name="EnableDebugLogging_Desc"><value>Writes diagnostics to the browser console. Leave off in production.</value></data>
+
+  <data name="Menu_SortAsc"><value>Sort A to Z</value></data>
+  <data name="Menu_SortDesc"><value>Sort Z to A</value></data>
+  <data name="Menu_GroupBy"><value>Group by this column</value></data>
+  <data name="Menu_Ungroup"><value>Remove grouping</value></data>
+  <data name="Menu_ShowTotal"><value>Show total</value></data>
+  <data name="Menu_HideTotal"><value>Hide total</value></data>
+
+  <data name="Group_Empty"><value>(No value)</value></data>
+  <data name="State_NoRecords"><value>No data available</value></data>
+  <data name="Totals_Grand"><value>Total</value></data>
+  <data name="Count_One"><value>1 record</value></data>
+  <data name="Count_Many"><value>{0} records</value></data>
+  <data name="Notice_BaseCurrency"><value>This group contains more than one currency, so the total is shown in the base currency.</value></data>
+  <data name="Notice_PartialTotals"><value>Totals cover the records loaded so far, not the full result set.</value></data>
+  <data name="Action_CopyTotals"><value>Copy totals</value></data>
+  <data name="Notice_TotalsCopied"><value>Totals copied to the clipboard.</value></data>
+  <data name="Notice_CopyFailed"><value>Could not copy to the clipboard.</value></data>
+  <data name="Tsv_Records"><value>Records</value></data>
+  <data name="Error_AggregateLimitTitle"><value>Totals unavailable</value></data>
+  <data name="Error_AggregateLimitMessage"><value>This result set is too large for the platform to total in one query. Narrow the filter, or switch the control to Auto so it can fall back to loaded rows.</value></data>
+
+  <data name="Duration_HourOne"><value>hour</value></data>
+  <data name="Duration_HourMany"><value>hours</value></data>
+  <data name="Duration_MinuteOne"><value>minute</value></data>
+  <data name="Duration_MinuteMany"><value>minutes</value></data>
+  <data name="Duration_PartSeparator"><value> </value></data>
+</root>

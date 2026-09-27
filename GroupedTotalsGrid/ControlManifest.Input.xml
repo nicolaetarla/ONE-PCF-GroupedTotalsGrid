@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <!--
+    Grouped Totals Grid - PCF dataset control.
+
+    Registered on a table's Controls tab (all views) or on an individual
+    subgrid / dashboard subgrid. The entity and the default view come from
+    that placement; the runtime view, filters and search come from the host.
+    See docs/CONFIGURATION.md.
+  -->
+  <control namespace="ONEConsult.net"
+           constructor="GroupedTotalsGrid"
+           version="1.0.18"
+           display-name-key="GroupedTotalsGrid_Display"
+           description-key="GroupedTotalsGrid_Desc"
+           control-type="virtual">
+
+    <data-set name="records" display-name-key="Records_Display">
+      <!--
+        No property-set is declared. Mixed-currency detection is done by the
+        server aggregate query, which groups by transactioncurrencyid itself.
+        On the client fallback path, currency detection only works when the
+        currency column is present in the view; see KNOWN-LIMITATIONS.md.
+      -->
+    </data-set>
+
+    <!-- ============ Grouping ============ -->
+    <property name="groupByColumn"
+              display-name-key="GroupByColumn_Display"
+              description-key="GroupByColumn_Desc"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="allowRuntimeGroupChange"
+              display-name-key="AllowRuntimeGroupChange_Display"
+              description-key="AllowRuntimeGroupChange_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="yes">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <property name="groupsInitiallyCollapsed"
+              display-name-key="GroupsInitiallyCollapsed_Display"
+              description-key="GroupsInitiallyCollapsed_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="yes">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <property name="showRecordCounts"
+              display-name-key="ShowRecordCounts_Display"
+              description-key="ShowRecordCounts_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="yes">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <property name="emptyGroupLabel"
+              display-name-key="EmptyGroupLabel_Display"
+              description-key="EmptyGroupLabel_Desc"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <!-- ============ Totals ============ -->
+    <property name="aggregateColumns"
+              display-name-key="AggregateColumns_Display"
+              description-key="AggregateColumns_Desc"
+              of-type="SingleLine.Text"
+              usage="input"
+              required="false" />
+
+    <property name="showGrandTotal"
+              display-name-key="ShowGrandTotal_Display"
+              description-key="ShowGrandTotal_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="yes">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <property name="totalsMode"
+              display-name-key="TotalsMode_Display"
+              description-key="TotalsMode_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="Auto">
+      <value name="Auto" display-name-key="TotalsMode_Auto">Auto</value>
+      <value name="ServerAggregate" display-name-key="TotalsMode_Server">ServerAggregate</value>
+      <value name="ClientOnly" display-name-key="TotalsMode_Client">ClientOnly</value>
+    </property>
+
+    <property name="durationDisplay"
+              display-name-key="DurationDisplay_Display"
+              description-key="DurationDisplay_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="Auto">
+      <value name="Auto" display-name-key="DurationDisplay_Auto">Auto</value>
+      <value name="HoursAndMinutes" display-name-key="DurationDisplay_HM">HoursAndMinutes</value>
+      <value name="HoursColonMinutes" display-name-key="DurationDisplay_HCM">HoursColonMinutes</value>
+      <value name="DecimalHours" display-name-key="DurationDisplay_Dec">DecimalHours</value>
+      <value name="Minutes" display-name-key="DurationDisplay_Min">Minutes</value>
+    </property>
+
+    <property name="maxClientRows"
+              display-name-key="MaxClientRows_Display"
+              description-key="MaxClientRows_Desc"
+              of-type="Whole.None"
+              usage="input"
+              required="false"
+              default-value="5000" />
+
+    <!-- ============ Native-grid parity ============ -->
+    <property name="navigationTypesAllowed"
+              display-name-key="NavigationTypesAllowed_Display"
+              description-key="NavigationTypesAllowed_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="All">
+      <value name="All" display-name-key="NavTypes_All">All</value>
+      <value name="PrimaryOnly" display-name-key="NavTypes_Primary">PrimaryOnly</value>
+      <value name="None" display-name-key="NavTypes_None">None</value>
+    </property>
+
+    <property name="enableOptionSetColors"
+              display-name-key="EnableOptionSetColors_Display"
+              description-key="EnableOptionSetColors_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="no">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <property name="rowDensity"
+              display-name-key="RowDensity_Display"
+              description-key="RowDensity_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="Platform">
+      <value name="Platform" display-name-key="RowDensity_Platform">Platform</value>
+      <value name="Comfortable" display-name-key="RowDensity_Comfortable">Comfortable</value>
+      <value name="Compact" display-name-key="RowDensity_Compact">Compact</value>
+    </property>
+
+    <!-- ============ Diagnostics ============ -->
+    <property name="enableDebugLogging"
+              display-name-key="EnableDebugLogging_Display"
+              description-key="EnableDebugLogging_Desc"
+              of-type="Enum"
+              usage="input"
+              required="false"
+              default-value="no">
+      <value name="yes" display-name-key="Yes">yes</value>
+      <value name="no" display-name-key="No">no</value>
+    </property>
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <resx path="strings/GroupedTotalsGrid.1033.resx" version="1.0.0" />
+      <!--
+        Virtual control: React and Fluent are supplied by the host, not bundled.
+
+        Verified against pcf-scripts 1.51.1 (PlatformLibraryVersions.json):
+          React  16.8 to 16.14.0  (or 18 to 18.3.1)
+          Fluent 9.0.0 to 9.68.0, served as 9.68.0
+
+        The webpack external is named FluentUIReactv940 for any 9.x. That is a
+        legacy alias, not the served version, so do not "correct" it.
+
+        Only these two are platform libraries. Anything else imported from a
+        package gets BUNDLED. That is why this control draws its own icons in
+        components/icons rather than importing @fluentui/react-icons, which
+        added roughly 1.4 MB and broke the webpack build.
+      -->
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

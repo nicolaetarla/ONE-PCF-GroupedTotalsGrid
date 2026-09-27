@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# PCF build output (pcf-scripts / MSBuild)
+out/
+bin/
+obj/
+**/generated/
+
+# Solution packaging output (.cdsproj builds, pac solution pack)
+*.zip
+Solutions/**/bin/
+Solutions/**/obj/
+
+# GroupedTotalsGridSolution/ is the committed solution project; only its
+# build output is ignored (covered by bin/, obj/ and *.zip above).
+
+# Test coverage
+coverage/
+*.lcov
+junit.xml
+
+# Caches
+.eslintcache
+*.tsbuildinfo
+.npm/
+.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pfx
+*.snk
+
+# Power Platform CLI local auth/profile data
+.pac/
+
+# Stray `pac` CLI output: if it runs with HOME unset or unexpanded (some
+# non-interactive shells), it writes its user settings to a literal "~"
+# directory here instead of the real home directory.
+/~/
+
+# Editor / IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*~
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini

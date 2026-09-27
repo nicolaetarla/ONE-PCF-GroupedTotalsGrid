@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 398" width="1000" height="398" role="img" aria-label="Grouped Totals Grid, light theme">
+  <rect x="0" y="0" width="1000" height="398" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="44" fill="#ffffff"/>
+  <text x="54" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Resource</text>
+  <text x="250" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Date</text>
+  <path d="M 292 24.0 l 4 -5 l 4 5" fill="none" stroke="#616161" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="362" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Work Order</text>
+  <text x="530" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Type</text>
+  <text x="794" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">Duration</text>
+  <text x="966" y="27.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">Billable Amount</text>
+  <rect x="0" y="43" width="1000" height="1" fill="#d1d1d1"/>
+  <rect x="0" y="44" width="1000" height="40" fill="#fafafa"/>
+  <path d="M 52 62.0 l 4.5 5 l 4.5 -5" fill="none" stroke="#242424" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="69.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Dana Whitfield</text>
+  <text x="250" y="69.0" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">12 records</text>
+  <text x="794" y="69.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">37 hours 45 minutes</text>
+  <text x="966" y="69.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">$4,218.75</text>
+  <rect x="0" y="83" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="84" width="1000" height="40" fill="#ffffff"/>
+  <rect x="14" y="96.5" width="15" height="15" rx="3" fill="none" stroke="#616161" stroke-width="1.2" opacity="0.55"/>
+  <text x="54" y="109.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Dana Whitfield</text>
+  <text x="250" y="109.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">14/08/2026</text>
+  <text x="362" y="109.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">WO-01847</text>
+  <text x="530" y="109.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Work</text>
+  <text x="794" y="109.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">2 hours 30 minutes</text>
+  <text x="966" y="109.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">$275.00</text>
+  <rect x="0" y="123" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="124" width="1000" height="40" fill="#ffffff"/>
+  <rect x="14" y="136.5" width="15" height="15" rx="3" fill="none" stroke="#616161" stroke-width="1.2" opacity="0.55"/>
+  <text x="54" y="149.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Dana Whitfield</text>
+  <text x="250" y="149.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">14/08/2026</text>
+  <text x="362" y="149.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">WO-01851</text>
+  <text x="530" y="149.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Travel</text>
+  <text x="794" y="149.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">45 minutes</text>
+  <text x="966" y="149.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">$0.00</text>
+  <rect x="0" y="163" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="164" width="1000" height="40" fill="#ffffff"/>
+  <rect x="14" y="176.5" width="15" height="15" rx="3" fill="none" stroke="#616161" stroke-width="1.2" opacity="0.55"/>
+  <text x="54" y="189.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Dana Whitfield</text>
+  <text x="250" y="189.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">15/08/2026</text>
+  <text x="362" y="189.0" fill="#0f6cbd" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">WO-01862</text>
+  <text x="530" y="189.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="start">Work</text>
+  <text x="794" y="189.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">6 hours 15 minutes</text>
+  <text x="966" y="189.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="400" text-anchor="end">$687.50</text>
+  <rect x="0" y="203" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="204" width="1000" height="40" fill="#fafafa"/>
+  <path d="M 53 219.0 l 5 5 l -5 5" fill="none" stroke="#242424" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="229.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Marcus Bell</text>
+  <text x="250" y="229.0" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">9 records</text>
+  <text x="794" y="229.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">28 hours 10 minutes</text>
+  <text x="966" y="229.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">$3,096.25</text>
+  <rect x="0" y="243" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="244" width="1000" height="40" fill="#fafafa"/>
+  <path d="M 53 259.0 l 5 5 l -5 5" fill="none" stroke="#242424" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="269.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Priya Raman</text>
+  <text x="250" y="269.0" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">14 records</text>
+  <text x="794" y="269.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">41 hours 20 minutes</text>
+  <text x="966" y="269.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">$4,546.50</text>
+  <rect x="0" y="283" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="284" width="1000" height="40" fill="#fafafa"/>
+  <path d="M 53 299.0 l 5 5 l -5 5" fill="none" stroke="#242424" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="309.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">(No value)</text>
+  <text x="250" y="309.0" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">2 records</text>
+  <text x="794" y="309.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">3 hours 0 minutes</text>
+  <text x="966" y="309.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">$0.00</text>
+  <rect x="0" y="323" width="1000" height="1" fill="#e0e0e0"/>
+  <rect x="0" y="324" width="1000" height="1" fill="#d1d1d1"/>
+  <rect x="0" y="324" width="1000" height="44" fill="#ffffff"/>
+  <rect x="0" y="324" width="1000" height="1" fill="#d1d1d1"/>
+  <text x="54" y="351.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="start">Total</text>
+  <text x="794" y="351.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">110 hours 15 minutes</text>
+  <text x="966" y="351.0" fill="#242424" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="13.5" font-weight="600" text-anchor="end">$11,861.50</text>
+  <rect x="0" y="368" width="1000" height="30" fill="#ffffff"/>
+  <rect x="0" y="368" width="1000" height="1" fill="#e0e0e0"/>
+  <text x="12" y="387" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="start">37 records</text>
+  <text x="988" y="387" fill="#616161" font-family="Segoe UI, Segoe UI Variable, -apple-system, system-ui, sans-serif" font-size="12" font-weight="400" text-anchor="end">1 - 37 of 37</text>
+</svg>

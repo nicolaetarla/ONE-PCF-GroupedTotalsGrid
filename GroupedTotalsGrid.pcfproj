@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Component project file.
+
+  SDK-STYLE ON PURPOSE. `dotnet build` only builds SDK-style projects; a legacy
+  project (ToolsVersion / the 2003 xmlns / a Microsoft.CSharp.targets import)
+  is silently skipped, so the solution build emits obj cache files and no zip.
+  If you ever regenerate this file from `pac pcf init` and get the legacy shape,
+  either convert it back to this form or build with MSBuild instead.
+
+  This is what `pac solution add-reference` points at, and what the solution
+  project (.cdsproj) builds. Without it the solution zip packages successfully
+  and contains nothing.
+
+  npm and MSBuild are two separate build paths over the same source:
+    npm run build           -> pcf-scripts directly, output in out/controls
+    dotnet build / msbuild  -> restores this project, invokes the same
+                               pcf-scripts build, hands output to the .cdsproj
+
+  OutputPath matches pcf-scripts' default output directory. Changing one
+  without the other breaks packaging.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Name>GroupedTotalsGrid</Name>
+    <ProjectGuid>41A95195-48F2-47BF-96E8-43CD7D758A1D</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+
+    <!--
+      Without this, MSBuild-driven builds and `pac pcf push` emit a DEVELOPMENT
+      bundle: unminified, far larger, slower at runtime. `npm run build` is
+      unaffected either way.
+    -->
+    <PcfBuildMode>production</PcfBuildMode>
+
+    <TargetFramework>net462</TargetFramework>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+
+    <!--
+      This project compiles no C#; it exists to drive the npm build and hand the
+      bundle to the solution. Default SDK globs would sweep up **/*.resx as
+      embedded resources (including the control's string resources) and walk
+      node_modules looking for sources.
+    -->
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Kept out of packaged output. node_modules in particular will make the
+         build crawl and can breach path-length limits on Windows. -->
+    <ExcludeDirectories Include="$(OutputPath)\**" />
+    <ExcludeDirectories Include=".gitignore" />
+    <ExcludeDirectories Include="bin\**" />
+    <ExcludeDirectories Include="obj\**" />
+    <ExcludeDirectories Include="node_modules\**" />
+    <ExcludeDirectories Include="docs\**" />
+    <ExcludeDirectories Include="__tests__\**" />
+    <ExcludeDirectories Include="scripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Version 1.* deliberately floats: it must stay in step with the
+         pcf-scripts version npm resolves, and pinning them separately is a
+         reliable way to get a confusing build failure. -->
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*" />
+    <!-- Lets the .NET SDK build net462 without the .NET Framework installed,
+         which is what makes `dotnet build` work on a clean machine, macOS and
+         Linux. -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

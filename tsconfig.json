@@ -1,0 +1,20 @@
+{
+  "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "jsx": "react",
+    "target": "ES2019",
+    "moduleResolution": "bundler",
+    "typeRoots": ["./node_modules/@types"],
+    // Only these ambient packages. Without the list, every @types package in
+    // node_modules is loaded globally, including @types/jsdom (pulled in by the
+    // test environment), whose parse5 types don't resolve under "node".
+    "types": ["powerapps-component-framework", "jest", "node"]
+  },
+  "include": ["GroupedTotalsGrid/**/*", "__tests__/**/*"]
+}
