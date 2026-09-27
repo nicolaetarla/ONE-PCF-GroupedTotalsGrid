@@ -55,7 +55,7 @@ This is the part that is easy to get wrong and the reason most of the test suite
 | `2.50 hours` | `110.25 hours` |
 | `1 Stunde 30 Minuten` | `110 Stunden 15 Minuten` |
 
-Duration is the hard case: Dataverse stores it as whole minutes and PCF exposes no duration formatter, so the control works out the shape **structurally** — it compares the numbers in the rendered string against the raw minute value to determine whether the platform used hours-and-minutes, colon notation, decimal hours or plain minutes, then reuses the platform's own surrounding text when rendering the total. That is why the German example above works without the control knowing any German.
+Duration is the hard case: Dataverse stores it as whole minutes and PCF exposes no duration formatter, so the control works out the shape **structurally** — it compares the numbers in the rendered string against the raw minute value to determine whether the platform used hours-and-minutes, colon notation, decimal hours or plain minutes, then reuses the platform's own surrounding text when rendering the total.
 
 The gate for all of this is in `__tests__/formatParity.test.ts`: a total over exactly one record is that record's value, so `formatTotal(value)` must equal that record's `getFormattedValue()` character for character. Any drift in precision, separators, symbol placement or duration shape fails the build.
 
